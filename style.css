@@ -7,21 +7,10 @@
 
 body {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   position: relative;
   background: white;
   background: linear-gradient(135deg, white 0%, #fff5f5 100%);
-  /* &::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    content: "";
-    pointer-events: none;
-    background-image: url(./design/desktop-design.jpg);
-    opacity: 0.3;
-  } */
 }
 
 body,
@@ -30,13 +19,13 @@ html {
 }
 
 .container {
-  padding: 0 165px;
+  padding: 0 10.3125rem;
   height: 100%;
 }
 
 header {
   position: absolute;
-  margin-top: 65px;
+  margin-top: 4.0625rem;
   z-index: 5;
 }
 
@@ -67,16 +56,16 @@ main {
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
-  padding-top: 65px;
+  padding-top: 4.0625rem;
 }
 
 .content__title {
   font-size: 4em;
   text-transform: uppercase;
   width: 100%;
-  letter-spacing: 17px;
-  line-height: 70px;
-  margin-bottom: 20px;
+  letter-spacing: 1.0625rem;
+  line-height: 4.375rem;
+  margin-bottom: 1.25rem;
   color: #413a3a;
 }
 
@@ -87,30 +76,30 @@ main {
 
 .content__txt {
   font-size: 1.005em;
-  line-height: 28px;
-  margin-bottom: 40px;
+  line-height: 1.75rem;
+  margin-bottom: 2.5rem;
   color: #ce9797;
 }
 
 .form {
-  width: 445px;
+  width: 27.8125rem;
   position: relative;
 }
 
 .form__wrapper {
   width: 100%;
-  height: 55px;
+  height: 3.4375rem;
   position: relative;
 }
 
 .form__input {
   height: 100%;
-  width: 390px;
+  width: 24.375rem;
   border: 0;
   outline: 0;
-  padding: 0 50px 0 31px;
-  border-radius: 30px;
-  border: 1px solid #ce9797;
+  padding: 0 3.125rem 0 1.9375rem;
+  border-radius: 1.875rem;
+  border: 0.0625rem solid #ce9797;
   position: relative;
   font-family: "Josefin Sans", sans-serif;
   color: #413a3a;
@@ -120,11 +109,11 @@ main {
 
 .form__btn {
   height: 100%;
-  width: 98px;
+  width: 6.125rem;
   position: absolute;
   right: 0;
   border: 0;
-  border-radius: 30px;
+  border-radius: 1.875rem;
   background: #f8bfbf;
   background: linear-gradient(135deg, #f8bfbf 0%, #ee8c8c 100%);
   -webkit-transition: ease 0.3s;
@@ -135,21 +124,21 @@ main {
 .form__btn:hover {
   -webkit-transition: ease 0.3s;
   transition: ease 0.3s;
-  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-          box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0rem 1.875rem 3.75rem -0.75rem, rgba(0, 0, 0, 0.3) 0rem 1.125rem 2.25rem -1.125rem;
+          box-shadow: rgba(50, 50, 93, 0.25) 0rem 1.875rem 3.75rem -0.75rem, rgba(0, 0, 0, 0.3) 0rem 1.125rem 2.25rem -1.125rem;
 }
 
 .error__msg {
   position: absolute;
-  bottom: -25px;
-  left: 15px;
+  bottom: -1.5625rem;
+  left: 0.9375rem;
   color: #f96262;
   display: none;
 }
 
 .error__icon {
   position: absolute;
-  right: 110px;
+  right: 6.875rem;
   top: 50%;
   z-index: 5;
   -webkit-transform: translateY(-50%);
@@ -158,7 +147,7 @@ main {
 }
 
 .error .form__wrapper input {
-  border: 2px solid #f96262;
+  border: 0.125rem solid #f96262;
 }
 
 .error .error__icon {
@@ -172,9 +161,9 @@ main {
 #toast {
   visibility: hidden;
   /* Hidden by default. Visible on click */
-  min-width: 250px;
+  min-width: 15.625rem;
   /* Set a default minimum width */
-  margin-left: -125px;
+  margin-left: -7.8125rem;
   /* Divide value of min-width by 2 */
   background-color: #198754;
   /* Black background color */
@@ -182,9 +171,9 @@ main {
   /* White text color */
   text-align: center;
   /* Centered text */
-  border-radius: 2px;
+  border-radius: 0.125rem;
   /* Rounded borders */
-  padding: 16px;
+  padding: 1rem;
   /* Padding */
   position: fixed;
   /* Sit on top of the screen */
@@ -192,8 +181,8 @@ main {
   /* Add a z-index if needed */
   left: 15%;
   /* Center the snackbar */
-  bottom: 50px;
-  /* 30px from the bottom */
+  bottom: 3.125rem;
+  /* 1.875rem from the bottom */
 }
 
 /* Show the snackbar when clicking on a button (class added with JavaScript) */
@@ -213,7 +202,7 @@ main {
     opacity: 0;
   }
   to {
-    bottom: 30px;
+    bottom: 1.875rem;
     opacity: 1;
   }
 }
@@ -224,14 +213,14 @@ main {
     opacity: 0;
   }
   to {
-    bottom: 30px;
+    bottom: 1.875rem;
     opacity: 1;
   }
 }
 
 @-webkit-keyframes fadeout {
   from {
-    bottom: 30px;
+    bottom: 1.875rem;
     opacity: 1;
   }
   to {
@@ -242,7 +231,7 @@ main {
 
 @keyframes fadeout {
   from {
-    bottom: 30px;
+    bottom: 1.875rem;
     opacity: 1;
   }
   to {
@@ -258,9 +247,83 @@ main {
   height: 100%;
 }
 
+@media screen and (max-width: 50rem) {
+  header {
+    position: initial;
+    margin: 0;
+    padding: 1.875rem 0;
+  }
+  .logo {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    position: relative;
+    left: -1.3125rem;
+  }
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: auto;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .container {
+    padding: 0 2.1875rem;
+  }
+  .left__side {
+    height: auto;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 100%;
+    padding-bottom: 5rem;
+  }
+  .left__side .container {
+    padding: 0;
+  }
+  .content {
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+    padding: 4.5625rem 2.1875rem 0 2.1875rem;
+  }
+  .content__title {
+    text-align: center;
+    font-size: 2.8em;
+    letter-spacing: 0.8125rem;
+    line-height: 3rem;
+    margin-bottom: 1.25rem;
+  }
+  .content__txt {
+    text-align: center;
+    line-height: 1.5rem;
+    margin-bottom: 2.3125rem;
+  }
+  .content__txt br {
+    display: none;
+  }
+  .form {
+    width: 100%;
+  }
+  .form__input {
+    width: 100%;
+  }
+  .form__btn {
+    width: 4.6875rem;
+  }
+  .right__side {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    background-image: url(./images/hero-mobile.jpg);
+    height: 17.5625rem;
+  }
+}
+
 .attribution {
-  font-size: 13px;
-  bottom: 15px;
+  font-size: 0.8125rem;
+  bottom: 0.9375rem;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   left: 50%;
